@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // 1) Write a function called add7 that takes one number and returns that number + 7.
+
+        function add7(number) {
+            if (isActualNumber(number) === true) {
+                let resultFunction1 = number + 7;
+                return "Function 1: " + resultFunction1;
+            } else { 
+                return resultFunction1 = "Function 1. Not acceptable value.";
+            }
+        }
+
+        function isActualNumber(x) {
+            return !isNaN(x) && typeof x === 'number';
+        }
+
+        console.log(add7(10))
+        console.log(add7("apple"))
+        console.log(add7(-100))
+
+        // 2) Write a function called multiply that takes 2 numbers and returns their product.
+
+        function multiply(a, b) {
+            if (isActualNumber(a) === true && isActualNumber(b) === true) {
+                let resultFunction2 = a * b;
+                return "Function 2: " + resultFunction2;
+            } else {
+                return resultFunction2 = "Function 2. Not acceptable value.";
+            }
+
+        }
+
+        console.log(multiply(6, 9))
+        console.log(multiply("Apple", 10))
+        console.log(multiply(9))
+
+        /* 
+        3) Write a function called capitalize that takes a string and returns that string with only the first letter capitalized. 
+        Make sure that it can take strings that are lowercase, UPPERCASE or BoTh. 
+        */
+
+        function capitalize(string) {
+            if (typeof string === 'string') {
+                let text = string.toLowerCase();
+                let capitalizedLetter = text.at(0).toUpperCase();
+                let lowerCasedText = text.slice(1);
+                let resultFunction3 = capitalizedLetter + lowerCasedText;
+                return "Function 3: " + resultFunction3;
+            } else {
+                return resultFunction3 = "Function 3. Not a stirng.";
+            }
+
+        }
+
+        console.log(capitalize("apple"))
+        console.log(capitalize('RIYA KOYARI'))
+        console.log(capitalize("blah BlaH BLAH"))
+        console.log(capitalize(9))
+
+        // 4) Write a function called lastLetter that takes a string and returns the very last letter of that string
+
+        function lastLetter(string) {
+            if (typeof string === 'string') {
+                let resultFunction4 = string.slice(-1);
+                return "Function 4: " + resultFunction4;
+            } else {
+                return resultFunction4 = "Function 4. Not a stirng.";
+            }
+        }
+
+        console.log(lastLetter("jsdkfjhaksjdhfkjha"))
+        console.log(lastLetter("sjdfs01879"))
+        console.log(lastLetter("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhIKLOH"))
+        console.log(lastLetter(98090))
+        
+    </script>
+    
+</body>
+</html>

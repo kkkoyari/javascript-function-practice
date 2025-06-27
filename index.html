@@ -51,10 +51,7 @@
 
         function capitalize(string) {
             if (typeof string === 'string') {
-                let text = string.toLowerCase();
-                let capitalizedLetter = text.at(0).toUpperCase();
-                let lowerCasedText = text.slice(1);
-                let resultFunction3 = capitalizedLetter + lowerCasedText;
+                let resultFunction3 = string.at(0).toUpperCase() + string.slice(1).toLowerCase();
                 return "Function 3: " + resultFunction3;
             } else {
                 return resultFunction3 = "Function 3. Not a stirng.";
